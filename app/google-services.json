@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649909669295",
+    "project_id": "ishop-67bee",
+    "storage_bucket": "ishop-67bee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649909669295:android:020923d7628262ec99735a",
+        "android_client_info": {
+          "package_name": "com.example.onlineshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649909669295-qlk83varqes2r627ie9un7950879h35u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhPrenxj98q-SmsVndFK1lMIhtaSPiNmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649909669295-qlk83varqes2r627ie9un7950879h35u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

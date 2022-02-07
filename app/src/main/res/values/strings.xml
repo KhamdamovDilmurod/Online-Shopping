@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">iShop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="make_order">make order</string>
+    <string name="open">Open navigation</string>
+    <string name="close">Close navigation</string>
+    <string name="change_language">Change language</string>
+    <string name="confirm_address">confirm address</string>
+    <string name="confirm_current_location">confirm current location</string>
+</resources>

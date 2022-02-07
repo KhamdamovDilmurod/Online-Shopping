@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iShop</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">XaritaOynasi</string>
+    <string name="make_order">buyurtma berish</string>
+    <string name="open">Open navigation</string>
+    <string name="close">Close navigation</string>
+    <string name="change_language">Tilni ozgartirish</string>
+    <string name="confirm_address"> manzilni belgilash</string>
+    <string name="confirm_current_location">hozirgi manzilni belgilash</string>
+</resources>

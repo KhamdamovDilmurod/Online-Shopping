@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_minus.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_plus.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_share.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_telegram.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/search_view_theme.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_make_order.xml" value="0.2" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_product_detail.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_web_view.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/cart_item_layout.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/catagory_item_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/category_item_layout.xml" value="0.67" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_cart.xml" value="0.16" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_change_language.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_favourite.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/nav_header.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/row_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/navigation_bar_menu.xml" value="0.15" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/navigation_drawer_menu.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/top_menu.xml" value="0.20364583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_telegram.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
