@@ -23,9 +23,7 @@ enum class LoginState{
 class LoginActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityLoginBinding
-
     lateinit var viewModel: MainViewModel
-
     var state = LoginState.CHECK_PHONE
     var phone = ""
 
@@ -33,6 +31,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         viewModel.error.observe(this, Observer {

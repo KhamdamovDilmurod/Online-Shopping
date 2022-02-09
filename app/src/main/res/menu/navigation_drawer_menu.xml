@@ -6,17 +6,27 @@
     <item android:id="@+id/dashboard"
         android:title="Dashboard"
         android:icon="@drawable/ic_baseline_dashboard_24"/>
-    <item android:id="@+id/notification"
-        android:title="News"
-        android:icon="@drawable/ic_baseline_notifications_24"/>
-    <item android:id="@+id/call"
-        android:title="Call"
-        android:icon="@drawable/ic_baseline_call_24"/>
-    <item android:id="@+id/smile"
-        android:title="Smile"
-        android:icon="@drawable/ic_baseline_insert_emoticon_24"/>
-    <item android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/ic_baseline_settings_24"/>
+    <item android:title="communicate">
+        <menu>
+            <item android:id="@+id/notification"
+                android:title="News"
+                android:icon="@drawable/ic_baseline_notifications_24"/>
+            <item android:id="@+id/call"
+                android:title="Call"
+                android:icon="@drawable/ic_baseline_call_24"/>
+        </menu>
+    </item>
+    <item android:title="services">
+        <menu>
+            <item android:id="@+id/smile"
+                android:title="Smile"
+                android:icon="@drawable/ic_baseline_insert_emoticon_24"/>
+            <item android:id="@+id/settings"
+                android:title="Settings"
+                android:icon="@drawable/ic_baseline_settings_24"/>
+        </menu>
+    </item>
+
+
 
 </menu>
