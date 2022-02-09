@@ -171,7 +171,12 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(Intent.EXTRA_TEXT, "Mening ilovamni sinab ko'ring va baho bering: t.me//Hamdamov_Dilmurod")
                 startActivity(intent)
             }
-            R.id.nav_telegram -> Toast.makeText(this,"Telegram clicked", Toast.LENGTH_SHORT).show()
+            R.id.nav_telegram -> {
+                val intent = Intent(Intent.ACTION_SEND)
+                intent.type = "text/plain"
+                intent.putExtra(Intent.EXTRA_TEXT, "Mening ilovamni sinab ko'ring va baho bering: https://github.com/KhamdamovDilmurod/Online-Shopping")
+                startActivity(intent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
