@@ -31,8 +31,5 @@
             android:text="Cristiano Ronaldo"
             android:textColor="@color/white"
             />
-
-
     </LinearLayout>
-
 </LinearLayout>

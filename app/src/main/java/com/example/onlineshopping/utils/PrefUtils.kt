@@ -62,5 +62,12 @@ object PrefUtils {
     fun getFCMToken(): String{
         return Hawk.get(PREF_FCM_TOKEN, "")
     }
+    fun setToken(value: String){
+        Hawk.put(PREF_TOKEN, value)
+    }
+
+    fun getToken(): String{
+        return Hawk.get(PREF_TOKEN, "")
+    }
 
 }

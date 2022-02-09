@@ -22,8 +22,10 @@ import com.example.onlineshopping.screen.fragments.FavouriteFragment
 import com.example.onlineshopping.screen.fragments.HomeFragment
 import com.example.onlineshopping.screen.fragments.UserFragment
 import com.example.onlineshopping.screen.settings.ChangeLanguageFragment
+import com.example.onlineshopping.screen.sign.LoginActivity
 import com.example.onlineshopping.screen.web.WebViewActivity
 import com.example.onlineshopping.utils.LocaleManager
+import com.example.onlineshopping.utils.PrefUtils
 
 class MainActivity : AppCompatActivity() {
 
@@ -91,8 +93,13 @@ class MainActivity : AppCompatActivity() {
                 activeFragment = cartFragment
             }
             else if (it.itemId== R.id.user){
-                supportFragmentManager.beginTransaction().hide(activeFragment).show(userFragment).commit()
-                activeFragment = userFragment
+                if (PrefUtils.getToken().isNullOrEmpty()){
+                    startActivity(Intent(this, LoginActivity::class.java))
+                    return@setOnNavigationItemSelectedListener false
+                }else{
+                    supportFragmentManager.beginTransaction().hide(activeFragment).show(userFragment).commit()
+                    activeFragment = userFragment
+                }
             }
             return@setOnNavigationItemSelectedListener true
         }

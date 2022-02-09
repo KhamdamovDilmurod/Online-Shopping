@@ -12,13 +12,21 @@ import kotlinx.coroutines.withContext
 
 class MainViewModel: ViewModel() {
 
-    val repository = ShopRepository()
+    private val repository = ShopRepository()
 
     val error = MutableLiveData<String>()
     val offersData = MutableLiveData<List<OfferModel>>()
     val categoriesData = MutableLiveData<List<CategoryModel>>()
     val productsData = MutableLiveData<List<ProductModel>>()
     val progress = MutableLiveData<Boolean>()
+
+    // github ->
+    val checkPhoneData = MutableLiveData<CheckPhoneResponse>()
+    val registrationData = MutableLiveData<Boolean>()
+    val confirmData = MutableLiveData<LoginResponse>()
+    val loginData = MutableLiveData<LoginResponse>()
+    val makeOrderData = MutableLiveData<Boolean>()
+    // <- //
 
     fun getOffers(){
         repository.getOffers(error,progress, offersData)
@@ -53,17 +61,12 @@ class MainViewModel: ViewModel() {
     }
     // comment qo'shildi
 
-
-
-
     fun getAllDBProducts(){
         CoroutineScope(Dispatchers.Main).launch{
             productsData.value = withContext(Dispatchers.IO){
                 AppDatabase.getDatabase().getProductDao().getAllProducts()}
         }
-
     }
-
     fun getAllDBCategories() {
         CoroutineScope(Dispatchers.Main).launch {
             categoriesData.value = withContext(Dispatchers.IO) {
@@ -71,4 +74,26 @@ class MainViewModel: ViewModel() {
             }
         }
     }
+
+    // github ->
+    fun checkPhone(phone: String){
+        repository.checkPhone(phone, error, progress, checkPhoneData)
+    }
+
+    fun registrationData(fullname: String, phone: String, password: String){
+        repository.registration(fullname, phone, password, error, progress, registrationData)
+    }
+
+    fun login(phone: String, password: String){
+        repository.login(phone, password, error, progress, loginData)
+    }
+
+    fun confirmUser(phone: String, code: String){
+        repository.confirmUser(phone, code, error, progress, confirmData)
+    }
+
+    fun makeOrder(products: List<CartModel>, lat: Double, lon: Double, comment: String){
+        repository.makeOrder(products, lat, lon, comment, error, progress, makeOrderData)
+    }
+    // <- //
 }

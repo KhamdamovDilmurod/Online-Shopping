@@ -3,10 +3,9 @@ package com.example.onlineshopping.api.repository
 
 import androidx.lifecycle.MutableLiveData
 import com.example.onlineshopping.api.ApiService
-import com.example.onlineshopping.model.BaseResponse
-import com.example.onlineshopping.model.CategoryModel
-import com.example.onlineshopping.model.OfferModel
-import com.example.onlineshopping.model.ProductModel
+import com.example.onlineshopping.model.*
+import com.example.onlineshopping.model.request.MakeOrderRequest
+import com.example.onlineshopping.model.request.RegisterRequest
 import com.example.onlineshopping.model.request.RequestModel
 import com.example.onlineshopping.utils.PrefUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -152,6 +151,146 @@ class ShopRepository() {
 
                     override fun onComplete() {
 
+                    }
+                })
+        )
+    }
+
+    // github ->
+    fun checkPhone(phone: String, error: MutableLiveData<String>, progress: MutableLiveData<Boolean>, success: MutableLiveData<CheckPhoneResponse>){
+        progress.value = true
+        compositeDisposable.add(
+            ApiService.apiClient().checkPhone(phone)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(object: DisposableObserver<BaseResponse<CheckPhoneResponse>>(){
+                    override fun onComplete() {
+
+                    }
+
+                    override fun onNext(t: BaseResponse<CheckPhoneResponse>) {
+                        progress.value = false
+                        if (t.success){
+                            success.value = t.data
+                        }else{
+                            error.value = t.message
+                        }
+                    }
+
+                    override fun onError(e: Throwable) {
+                        progress.value = false
+                        error.value = e.localizedMessage
+                    }
+                })
+        )
+    }
+
+    fun registration(fullname: String, phone: String, password: String, error: MutableLiveData<String>, progress: MutableLiveData<Boolean>, success: MutableLiveData<Boolean>){
+        progress.value = true
+        compositeDisposable.add(
+            ApiService.apiClient().register(RegisterRequest(fullname, phone, password))
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(object: DisposableObserver<BaseResponse<Any>>(){
+                    override fun onComplete() {
+
+                    }
+
+                    override fun onNext(t: BaseResponse<Any>) {
+                        progress.value = false
+                        if (t.success){
+                            success.value = true
+                        }else{
+                            error.value = t.message
+                        }
+                    }
+
+                    override fun onError(e: Throwable) {
+                        progress.value = false
+                        error.value = e.localizedMessage
+                    }
+                })
+        )
+    }
+
+    fun confirmUser(phone: String, sms_code: String, error: MutableLiveData<String>, progress: MutableLiveData<Boolean>, success: MutableLiveData<LoginResponse>){
+        progress.value = true
+        compositeDisposable.add(
+            ApiService.apiClient().confirm(phone, sms_code)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(object: DisposableObserver<BaseResponse<LoginResponse>>(){
+                    override fun onComplete() {
+
+                    }
+
+                    override fun onNext(t: BaseResponse<LoginResponse>) {
+                        progress.value = false
+                        if (t.success){
+                            success.value = t.data
+                        }else{
+                            error.value = t.message
+                        }
+                    }
+
+                    override fun onError(e: Throwable) {
+                        progress.value = false
+                        error.value = e.localizedMessage
+                    }
+                })
+        )
+    }
+
+    fun login(phone: String, password: String, error: MutableLiveData<String>, progress: MutableLiveData<Boolean>, success: MutableLiveData<LoginResponse>){
+        progress.value = true
+        compositeDisposable.add(
+            ApiService.apiClient().login(phone, password)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(object: DisposableObserver<BaseResponse<LoginResponse>>(){
+                    override fun onComplete() {
+
+                    }
+
+                    override fun onNext(t: BaseResponse<LoginResponse>) {
+                        progress.value = false
+                        if (t.success){
+                            success.value = t.data
+                        }else{
+                            error.value = t.message
+                        }
+                    }
+
+                    override fun onError(e: Throwable) {
+                        progress.value = false
+                        error.value = e.localizedMessage
+                    }
+                })
+        )
+    }
+    fun makeOrder(products: List<CartModel>, lat: Double, lon: Double, comment: String, error: MutableLiveData<String>, progress: MutableLiveData<Boolean>, success: MutableLiveData<Boolean>) {
+        progress.value = true
+        compositeDisposable.add(
+            ApiService.apiClient().makeOrder(MakeOrderRequest(products, "delivery", "", lat, lon, comment))
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(object : DisposableObserver<BaseResponse<Any>>() {
+                    override fun onComplete() {
+
+                    }
+
+                    override fun onNext(t: BaseResponse<Any>) {
+                        progress.value = false
+                        if (t.success) {
+                            success.value = true
+                        } else {
+                            error.value = t.message
+                        }
+                    }
+
+                    override fun onError(e: Throwable) {
+                        progress.value = false
+                        error.value = e.localizedMessage
                     }
                 })
         )

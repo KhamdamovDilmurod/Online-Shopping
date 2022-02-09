@@ -46,7 +46,7 @@ class AppFirebaseMessagingService : FirebaseMessagingService(){
 
     fun showMessage(title: String, body: String, id: Long = System.currentTimeMillis()){
         val defaultSoundUri: Uri? = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
-        var intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         val pendingIntent = PendingIntent.getActivity(
