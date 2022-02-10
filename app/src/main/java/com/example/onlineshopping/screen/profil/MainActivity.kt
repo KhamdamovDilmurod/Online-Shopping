@@ -23,6 +23,7 @@ import com.example.onlineshopping.screen.fragments.HomeFragment
 import com.example.onlineshopping.screen.fragments.UserFragment
 import com.example.onlineshopping.screen.settings.ChangeLanguageFragment
 import com.example.onlineshopping.screen.sign.LoginActivity
+import com.example.onlineshopping.screen.web.AboutUsActivity
 import com.example.onlineshopping.screen.web.WebViewActivity
 import com.example.onlineshopping.utils.LocaleManager
 import com.example.onlineshopping.utils.PrefUtils
@@ -107,7 +108,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.navigationView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.aboutUs -> Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
+                R.id.aboutUs -> {
+                    val intent = Intent(this,AboutUsActivity::class.java)
+                    startActivity(intent)
+                }
                 R.id.dashboard -> Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
                 R.id.notification -> {
                     val intent = Intent(this,WebViewActivity::class.java)

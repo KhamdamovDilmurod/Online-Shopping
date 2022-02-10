@@ -17,7 +17,8 @@ class AboutUsActivity : AppCompatActivity() {
         binding.webView.webViewClient = WebViewClient()
 
         // this will load the url of the website
-        binding.webView.loadUrl("https://www.amazon.com/gp/css/homepage.html?ref_=nav_em_ya_0_1_1_35")
+        // about us
+        binding.webView.loadUrl("https://www.aboutamazon.com/about-us")
 
         // this will enable the javascript settings
         binding.webView.settings.javaScriptEnabled = true
