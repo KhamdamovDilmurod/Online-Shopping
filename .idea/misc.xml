@@ -13,8 +13,9 @@
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_share.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/ic_telegram.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/drawable/search_view_theme.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_about_us.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_make_order.xml" value="0.1" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_product_detail.xml" value="0.31666666666666665" />
@@ -22,7 +23,7 @@
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/activity_web_view.xml" value="0.1" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/cart_item_layout.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/catagory_item_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/category_item_layout.xml" value="0.67" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/category_item_layout.xml" value="0.16" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_cart.xml" value="0.16" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_change_language.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/layout/fragment_favourite.xml" value="0.20416666666666666" />
@@ -34,6 +35,8 @@
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/navigation_bar_menu.xml" value="0.15" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/navigation_drawer_menu.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/menu/top_menu.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Professional/AndroidStudioProjects/OnlineShopping/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

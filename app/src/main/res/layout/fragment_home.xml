@@ -24,13 +24,15 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginHorizontal="8dp"
                     app:cardCornerRadius="12dp">
 
                     <com.synnapps.carouselview.CarouselView
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginTop="12dp"
                         android:id="@+id/carouselView"
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="170dp"
                         app:fillColor="#7AFAB7"
                         app:pageColor="#00000000"
                         app:radius="6dp"

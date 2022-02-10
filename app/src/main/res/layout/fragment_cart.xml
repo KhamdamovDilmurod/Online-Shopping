@@ -7,6 +7,7 @@
     tools:context=".screen.fragments.CartFragment">
 
     <LinearLayout
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -20,7 +21,10 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerCart"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                tools:itemCount="7"
+                tools:listitem="@layout/cart_item_layout"
+                />
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <com.google.android.material.button.MaterialButton

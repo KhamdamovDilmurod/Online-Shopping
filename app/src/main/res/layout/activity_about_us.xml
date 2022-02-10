@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
     android:layout_height="match_parent"
-    tools:context=".screen.web.WebViewActivity">
-
+    android:background="@color/colorPrimary"
+    tools:context=".screen.web.AboutUsActivity">
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -14,7 +13,7 @@
         android:layout_margin="8dp"
         android:gravity="center_horizontal"
         android:fontFamily="@font/familiafuerte"
-        android:text="Website of iShop"
+        android:text="About Us"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -31,6 +30,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
