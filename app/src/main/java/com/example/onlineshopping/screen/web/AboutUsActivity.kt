@@ -26,7 +26,7 @@ class AboutUsActivity : AppCompatActivity() {
         // if you want to enable zoom feature
         binding.webView.settings.setSupportZoom(true)
     }
-
+//nkj
     // if you press Back button this code will work
     override fun onBackPressed() {
         // if your webview can go back it will go back
