@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".screen.fragments.FavouriteFragment">
+
     <androidx.appcompat.widget.SearchView
-        android:background="@drawable/search_view_theme"
-        app:searchIcon="@drawable/ic_baseline_search_24"
         android:id="@+id/searchView"
-        android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_view_theme"
+        app:defaultQueryHint="Search"
         app:queryHint="Search"
-        app:defaultQueryHint="Search"/>
+        app:searchIcon="@drawable/ic_baseline_search_24" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe"

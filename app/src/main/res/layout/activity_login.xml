@@ -6,51 +6,58 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".screen.sign.LoginActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                app:contentPadding="16dp"
                 app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
-                app:cardCornerRadius="8dp">
+                app:contentPadding="16dp">
+
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_baseline_chevron_left_24"/>
+                    android:src="@drawable/ic_baseline_chevron_left_24" />
             </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/tvTitle"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:maxLines="1"
+                android:layout_weight="1"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:maxLines="1"
+                android:text="Sign"
                 android:textColor="@color/black"
-                android:text="Sign"/>
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewFavorite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:visibility="invisible"
                 android:layout_margin="16dp"
-                app:contentPadding="16dp"
+                android:visibility="invisible"
                 app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
-                app:cardCornerRadius="8dp">
+                app:contentPadding="16dp">
+
                 <ImageView
                     android:id="@+id/imgFavorite"
                     android:layout_width="24dp"
@@ -64,93 +71,106 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lyPhone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_height="wrap_content">
+
                     <EditText
                         android:id="@+id/edPhone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:hint="Phone number"
                         android:inputType="phone"
-                        android:text="+998"
-                        android:hint="Phone number"/>
+                        android:text="+998" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lySMSCode"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_marginTop="8dp">
+
                     <EditText
                         android:id="@+id/edCode"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="SMS code"
-                        android:inputType="number"/>
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lyFullname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_marginTop="8dp">
+
                     <EditText
                         android:id="@+id/edFullname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Full name"
-                        android:inputType="textPersonName"/>
+                        android:inputType="textPersonName" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lyPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    app:passwordToggleEnabled="true"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:passwordToggleEnabled="true">
+
                     <EditText
                         android:id="@+id/edPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Password"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lyRePassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    app:passwordToggleEnabled="true"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:passwordToggleEnabled="true">
+
                     <EditText
                         android:id="@+id/edRePassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Confirm password"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/gray"/>
+            android:background="@color/gray" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"
-            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_margin="16dp"
-            app:cornerRadius="16dp"
-            android:text="NEXT"/>
+            android:text="NEXT"
+            android:textColor="@color/white"
+            app:cornerRadius="16dp" />
     </LinearLayout>
 
     <FrameLayout
@@ -158,8 +178,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#77000000"
-        android:visibility="gone"
-        android:clickable="true">
+        android:clickable="true"
+        android:visibility="gone">
 
 
         <com.airbnb.lottie.LottieAnimationView
@@ -167,9 +187,9 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            app:lottie_fileName="loading.json"
             app:lottie_autoPlay="true"
-            app:lottie_loop="true"/>
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true" />
     </FrameLayout>
 
 </FrameLayout>
